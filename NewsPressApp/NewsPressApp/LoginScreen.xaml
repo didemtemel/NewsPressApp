@@ -1,0 +1,20 @@
+﻿<Window x:Class="NewsPressApp.LoginScreen"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NewsPressApp"
+        mc:Ignorable="d"
+        Title="LoginScreen" Height="800" Width="1200" FontSize="14" Background="#0F4925">
+    <Border Background="White" CornerRadius="20" Margin="120" Width="400" Height="300">
+        <StackPanel Margin="20">
+            <Label Content="Kullanıcı Girişi" Foreground="Black" FontSize="25" HorizontalAlignment="Center"/>
+            <Separator></Separator>
+            <Label Content="Kullanıcı adı" Foreground="Black"/>
+            <TextBox Name="txtUserName" Background="#E3E3E3" Foreground="black" FontSize="18"/>
+            <Label Content="Şifre" Foreground="Black"/>
+            <PasswordBox Name="txtPassword" Background="#E3E3E3" Foreground="black" FontSize="18"/>
+            <Button Name="btnSubmit" Click="btnSubmit_Click" Background="#E3E3E3" Content="Giriş" Margin="100 40"   Foreground="Black" FontSize="18"/>
+        </StackPanel>
+    </Border>
+</Window>

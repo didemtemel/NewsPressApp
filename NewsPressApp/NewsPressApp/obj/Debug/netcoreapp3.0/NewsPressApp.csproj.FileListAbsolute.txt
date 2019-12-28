@@ -1,0 +1,13 @@
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\bin\Debug\netcoreapp3.0\NewsPressApp.exe
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\NewsPressApp.csprojAssemblyReference.cache
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\LoginScreen.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\MainWindow.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\App.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\NewsPressApp_MarkupCompile.cache
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\NewsPressApp_MarkupCompile.lref
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\LoginScreen.baml
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\MainWindow.baml
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\NewsPressApp.g.resources
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\NewsPressApp.AssemblyInfoInputs.cache
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\NewsPressApp.AssemblyInfo.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Debug\netcoreapp3.0\NewsPressApp.pdb
