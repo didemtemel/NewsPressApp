@@ -10,7 +10,16 @@
     <Compile Update="AuthorityWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="GovernerSiteWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoginScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SiteDetail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="WebsiteAuthorityWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -18,10 +27,19 @@
     <Page Update="AuthorityWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="GovernerSiteWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoginScreen.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SiteDetail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="WebsiteAuthorityWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

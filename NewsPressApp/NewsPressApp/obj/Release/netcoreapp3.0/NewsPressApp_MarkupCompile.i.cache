@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_0
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\App.xaml
-3-1291053262
+6-121078925
 
-7-1031873064
+11-1307277945
 2111009925227
-AuthorityWindow.xaml;LoginScreen.xaml;MainWindow.xaml;
+AuthorityWindow.xaml;GovernerSiteWindow.xaml;LoginScreen.xaml;MainWindow.xaml;SiteDetail.xaml;WebsiteAuthorityWindow.xaml;
 
 True
 

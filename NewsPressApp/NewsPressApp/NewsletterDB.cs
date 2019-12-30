@@ -8,7 +8,12 @@ namespace NewsPressApp
     class NewsletterDB : DbContext
     {
         string connectionString = @"Server=.;Database=NewsletterDB;Trusted_Connection=True;";
+
         public DbSet<User> User { get; set; }
+
+        public DbSet<Website> Website { get; set; }
+
+
         public NewsletterDB() : base()
         {
 

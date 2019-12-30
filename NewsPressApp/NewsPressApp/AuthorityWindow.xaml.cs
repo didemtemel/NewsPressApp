@@ -34,6 +34,7 @@ namespace NewsPressApp
             db.SaveChanges();
             MessageBox.Show("Kullanıcı sisteme kaydedildi.");
 
+
         }
 
         private void btnAuthority_Click(object sender, RoutedEventArgs e)
@@ -42,9 +43,11 @@ namespace NewsPressApp
             //authority.Show();
         }
 
-        private void btnAuthority_Copy_Click(object sender, RoutedEventArgs e)
+        private void btnNewSite_Click(object sender, RoutedEventArgs e)
         {
-
+            WebsiteAuthorityWindow websiteauthority = new WebsiteAuthorityWindow();
+            websiteauthority.Show();
+            this.Close();
         }
     }
 }

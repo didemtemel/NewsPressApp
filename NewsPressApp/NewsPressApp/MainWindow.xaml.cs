@@ -33,11 +33,14 @@ namespace NewsPressApp
         {
             AuthorityWindow authority = new AuthorityWindow();
             authority.Show();
+            this.Close();
         }
 
         private void btnNewSite_Click(object sender, RoutedEventArgs e)
         {
-
+            WebsiteAuthorityWindow websiteauthority = new WebsiteAuthorityWindow();
+            websiteauthority.Show();
+            this.Close();
         }
 
 
@@ -49,6 +52,11 @@ namespace NewsPressApp
             }
         }
 
-
+        private void btnGoverner_Click(object sender, RoutedEventArgs e)
+        {
+            GovernerSiteWindow governersite = new GovernerSiteWindow();
+            governersite.Show();
+            this.Close();
+        }
     }
 }

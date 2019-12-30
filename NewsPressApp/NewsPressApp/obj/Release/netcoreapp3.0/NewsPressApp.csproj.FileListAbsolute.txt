@@ -65,3 +65,9 @@ C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\NewsPressApp.csprojAssemblyReference.cache
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\AuthorityWindow.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\AuthorityWindow.baml
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\WebsiteAuthorityWindow.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\WebsiteAuthorityWindow.baml
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetail.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetail.baml
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\GovernerSiteWindow.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\GovernerSiteWindow.baml
