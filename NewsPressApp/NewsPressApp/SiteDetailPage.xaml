@@ -1,0 +1,19 @@
+﻿<Page x:Class="NewsPressApp.SiteDetailPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NewsPressApp"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="SiteDetailPage" >
+    <Grid>
+        <TextBlock x:Name="txtsitename" Grid.Column="2" HorizontalAlignment="Left" FontSize="20" Margin="193,53,0,0" Text="GazeteAdı" TextWrapping="Wrap" VerticalAlignment="Top" Height="31" Width="118"/>
+        <StackPanel Margin="193,89,52,650" Grid.Column="2" Orientation="Horizontal" >
+            <Button x:Name="btnReport" Content="Rapor" Width="279" Height="45" Click="btnReport_Click" ></Button>
+            <Button x:Name="btnDetail" Content="Detay" Width="277" Height="45" Click="btnDetail_Click" ></Button>
+            <Button x:Name="btnSettings" Content="Ayarlar" Width="289" Height="45" Click="btnSettings_Click" />
+        </StackPanel>
+        <Frame x:Name="frmSiteDetails" Margin="212,187,55,41"/>
+    </Grid>
+</Page>

@@ -8,16 +8,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace NewsPressApp
 {
     /// <summary>
-    /// WebsiteAuthorityWindow.xaml etkileşim mantığı
+    /// SiteAuthority.xaml etkileşim mantığı
     /// </summary>
-    public partial class WebsiteAuthorityWindow : Window
+    public partial class SiteAuthority : Page
     {
-        public WebsiteAuthorityWindow()
+        public SiteAuthority()
         {
             InitializeComponent();
         }
@@ -39,20 +40,10 @@ namespace NewsPressApp
             MessageBox.Show("Gazete sisteme kaydedildi.");
         }
 
-        private void btnAuthoritySite_Click(object sender, RoutedEventArgs e)
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            WebsiteAuthorityWindow websiteauthority = new WebsiteAuthorityWindow();
-            websiteauthority.Show();
-            this.Close();
-        }
+            this.NavigationService.Navigate(new GovernerSitesPage());
 
-
-
-        private void btnAuthority_Click(object sender, RoutedEventArgs e)
-        {
-            AuthorityWindow authority = new AuthorityWindow();
-            authority.Show();
-            this.Close();
         }
     }
 }

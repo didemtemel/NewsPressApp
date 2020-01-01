@@ -7,27 +7,33 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
-    <Compile Update="AuthorityWindow.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Update="GovernerSiteWindow.xaml.cs">
+    <Compile Update="GovernerSitesPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginScreen.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="SiteDetail.xaml.cs">
+    <Compile Update="SiteAuthority.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Update="WebsiteAuthorityWindow.xaml.cs">
+    <Compile Update="SiteDetail-Detail.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SiteDetail-Report.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SiteDetail-Settings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="SiteDetailPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserAuthorityPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Page Update="AuthorityWindow.xaml">
-      <SubType>Designer</SubType>
-    </Page>
-    <Page Update="GovernerSiteWindow.xaml">
+    <Page Update="GovernerSitesPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="LoginScreen.xaml">
@@ -36,10 +42,22 @@
     <Page Update="MainWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="SiteDetail.xaml">
+    <Page Update="SiteAuthority.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="WebsiteAuthorityWindow.xaml">
+    <Page Update="SiteDetail-Detail.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SiteDetail-Report.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SiteDetail-Settings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SiteDetailPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserAuthorityPage.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

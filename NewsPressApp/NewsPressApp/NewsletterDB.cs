@@ -13,6 +13,7 @@ namespace NewsPressApp
 
         public DbSet<Website> Website { get; set; }
 
+        public DbSet<Link> Link { get; set; }
 
         public NewsletterDB() : base()
         {

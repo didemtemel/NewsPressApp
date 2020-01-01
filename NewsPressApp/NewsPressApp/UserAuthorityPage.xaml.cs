@@ -8,19 +8,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace NewsPressApp
 {
     /// <summary>
-    /// AuthorityWindow.xaml etkileşim mantığı
+    /// UserAuthorityPage.xaml etkileşim mantığı
     /// </summary>
-    public partial class AuthorityWindow : Window
+    public partial class UserAuthorityPage : Page
     {
-        public AuthorityWindow()
+        public UserAuthorityPage()
         {
             InitializeComponent();
         }
+
         private void btnSave_Click(object sender, RoutedEventArgs e)
         {
             User user = new User();
@@ -33,21 +35,12 @@ namespace NewsPressApp
 
             db.SaveChanges();
             MessageBox.Show("Kullanıcı sisteme kaydedildi.");
-
-
         }
 
-        private void btnAuthority_Click(object sender, RoutedEventArgs e)
+        private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            //AuthorityWindow authority = new AuthorityWindow();
-            //authority.Show();
-        }
+            this.NavigationService.Navigate(new GovernerSitesPage());
 
-        private void btnNewSite_Click(object sender, RoutedEventArgs e)
-        {
-            WebsiteAuthorityWindow websiteauthority = new WebsiteAuthorityWindow();
-            websiteauthority.Show();
-            this.Close();
         }
     }
 }

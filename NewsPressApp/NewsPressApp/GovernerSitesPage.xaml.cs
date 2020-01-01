@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -12,22 +10,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace NewsPressApp
 {
     /// <summary>
-    /// GovernerSiteWindow.xaml etkileşim mantığı
+    /// GovernerSitesPage.xaml etkileşim mantığı
     /// </summary>
-    public partial class GovernerSiteWindow : Window
+    public partial class GovernerSitesPage : Page
     {
         NewsletterDB newsletterDB;
-        public GovernerSiteWindow()
+
+        public GovernerSitesPage()
         {
+
             InitializeComponent();
             newsletterDB = new NewsletterDB();
             FillDataGrid();
-
         }
 
         private void FillDataGrid()
@@ -36,7 +36,7 @@ namespace NewsPressApp
             string CmdString = string.Empty;
             using (SqlConnection con = new SqlConnection(sqlCon))
             {
-                CmdString = "SELECT sitename FROM Website";
+                CmdString = "SELECT sitecode , sitename FROM Website";
                 SqlCommand cmd = new SqlCommand(CmdString, con);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable("sitename");
@@ -44,35 +44,19 @@ namespace NewsPressApp
                 grdWebsite.ItemsSource = dt.DefaultView;
             }
         }
-        private void btnAuthority_Click(object sender, RoutedEventArgs e)
-        {
-            AuthorityWindow authority = new AuthorityWindow();
-            authority.Show();
-            this.Close();
-        }
-
-        private void btnNewSite_Click(object sender, RoutedEventArgs e)
-        {
-            WebsiteAuthorityWindow websiteauthority = new WebsiteAuthorityWindow();
-            websiteauthority.Show();
-            this.Close();
-        }
-
-
 
         private void grdWebsite_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             /*https://social.msdn.microsoft.com/Forums/en-US/4eaaa58f-404c-41a0-9ee6-65e77aab5c58/how-to-pull-data-from-datarowview?forum=Vsexpressvcs */
-            
+
             DataRowView drv = this.grdWebsite.SelectedItem as DataRowView;
 
             Website website = new Website();
 
             website.SiteName = drv["sitename"].ToString();
 
-            SiteDetail sitedetail = new SiteDetail(website);
-            sitedetail.Show();
-            this.Close();
+            SiteDetailPage sitedetail = new SiteDetailPage(website);
+            this.Content = sitedetail;
         }
     }
 }

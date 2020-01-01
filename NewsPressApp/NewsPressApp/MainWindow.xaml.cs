@@ -29,18 +29,17 @@ namespace NewsPressApp
             checkRole(user);
         }
 
+
         private void btnAuthority_Click(object sender, RoutedEventArgs e)
         {
-            AuthorityWindow authority = new AuthorityWindow();
-            authority.Show();
-            this.Close();
+            frmMain.Content = new UserAuthorityPage();
+
         }
 
         private void btnNewSite_Click(object sender, RoutedEventArgs e)
         {
-            WebsiteAuthorityWindow websiteauthority = new WebsiteAuthorityWindow();
-            websiteauthority.Show();
-            this.Close();
+            frmMain.Content = new SiteAuthority();
+
         }
 
 
@@ -54,9 +53,10 @@ namespace NewsPressApp
 
         private void btnGoverner_Click(object sender, RoutedEventArgs e)
         {
-            GovernerSiteWindow governersite = new GovernerSiteWindow();
-            governersite.Show();
-            this.Close();
+            frmMain.Content = new GovernerSitesPage();
         }
+
+
+
     }
 }

@@ -1,0 +1,55 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Windows;
+using System.Windows.Controls;
+using System.Windows.Data;
+using System.Windows.Documents;
+using System.Windows.Input;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
+using System.Windows.Shapes;
+
+namespace NewsPressApp
+{
+    /// <summary>
+    /// SiteDetailPage.xaml etkileşim mantığı
+    /// </summary>
+    public partial class SiteDetailPage : Page
+    {
+        Website website;
+
+        public SiteDetailPage(Website website)
+        {
+            InitializeComponent();
+            this.website = website;
+            initializeWebsiteInfo();
+        }
+
+
+        public void initializeWebsiteInfo()
+        {
+            txtsitename.Text = website.SiteName;
+        }
+
+
+        private void btnReport_Click(object sender, RoutedEventArgs e)
+        {
+            frmSiteDetails.Content = new SiteDetail_Report();
+
+        }
+
+        private void btnDetail_Click(object sender, RoutedEventArgs e)
+        {
+            frmSiteDetails.Content = new SiteDetail_Detail();
+
+        }
+
+        private void btnSettings_Click(object sender, RoutedEventArgs e)
+        {
+            frmSiteDetails.Content = new SiteDetail_Settings();
+
+        }
+    }
+}
