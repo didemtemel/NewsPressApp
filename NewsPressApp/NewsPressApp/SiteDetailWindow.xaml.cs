@@ -8,19 +8,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace NewsPressApp
 {
     /// <summary>
-    /// SiteDetailPage.xaml etkileşim mantığı
+    /// SiteDetailWindow.xaml etkileşim mantığı
     /// </summary>
-    public partial class SiteDetailPage : Page
+    public partial class SiteDetailWindow : Window
     {
         Website website;
 
-        public SiteDetailPage(Website website)
+        public SiteDetailWindow(Website website)
         {
             InitializeComponent();
             this.website = website;

@@ -28,6 +28,9 @@
     <Compile Update="SiteDetailPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="SiteDetailWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserAuthorityPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -55,6 +58,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SiteDetailPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="SiteDetailWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserAuthorityPage.xaml">

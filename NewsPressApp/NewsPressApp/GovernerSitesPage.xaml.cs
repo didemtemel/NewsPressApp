@@ -55,8 +55,8 @@ namespace NewsPressApp
 
             website.SiteName = drv["sitename"].ToString();
 
-            SiteDetailPage sitedetail = new SiteDetailPage(website);
-            this.Content = sitedetail;
+            SiteDetailWindow sitedetail = new SiteDetailWindow(website);
+            sitedetail.Show();
         }
     }
 }
