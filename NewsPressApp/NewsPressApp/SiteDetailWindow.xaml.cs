@@ -41,7 +41,7 @@ namespace NewsPressApp
 
         private void btnDetail_Click(object sender, RoutedEventArgs e)
         {
-            frmSiteDetails.Content = new SiteDetail_Detail();
+            frmSiteDetails.Content = new SiteDetail_Detail(website);
 
         }
 

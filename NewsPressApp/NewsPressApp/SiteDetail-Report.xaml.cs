@@ -28,19 +28,37 @@ namespace NewsPressApp
 
         private void FillDataGrid()
         {
-            var dateStart = datepickerStart.SelectedDate.Value.Date;
-            var dateEnd = datepickerEnd.SelectedDate.Value.Date;
+
             String sqlCon = @"Data Source =.; Initial Catalog = NewsletterDB; Integrated Security = True;";
             string CmdString = string.Empty;
             using (SqlConnection con = new SqlConnection(sqlCon))
             {
-                CmdString = "SELECT COUNT (sitelink) FROM Link WHERE newsdate BETWEEN '2019-02-02' AND '2020-03-03'";
+                CmdString = "SELECT COUNT (sitelink) FROM Link";
                 SqlCommand cmd = new SqlCommand(CmdString, con);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                 dtgNumAll.ItemsSource = dt.DefaultView;
             }
+        }
+
+       
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(datepickerEnd.SelectedDate.Value.ToString("yyyy-MM-dd"));
+            String sqlCon = @"Data Source =.; Initial Catalog = NewsletterDB; Integrated Security = True;";
+            string CmdString = string.Empty;
+            using (SqlConnection con = new SqlConnection(sqlCon))
+            {
+                CmdString = "SELECT COUNT (sitelink) FROM Link WHERE newsdate BETWEEN '" + datepickerStart.SelectedDate.Value.ToString("yyyy-MM-dd") + "' AND '" + datepickerEnd.SelectedDate.Value.ToString("yyyy-MM-dd") + "'";
+                SqlCommand cmd = new SqlCommand(CmdString, con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+               dtgNumAll.ItemsSource = dt.DefaultView;
+            }
+
         }
     }
 }

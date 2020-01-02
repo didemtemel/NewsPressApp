@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "NewsPressApp": {
+      "commandName": "Project",
+      "nativeDebugging": true
+    }
+  }
+}
