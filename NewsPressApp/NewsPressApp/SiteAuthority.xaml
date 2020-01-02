@@ -5,13 +5,13 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NewsPressApp"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="1200"
+      d:DesignHeight="700" d:DesignWidth="900"
       Title="SiteAuthority">
 
     <Grid>
-        <Label Content="Site Yönetimi" Foreground="Black" FontSize="22" Margin="328,34,600,695"/>
-        <Border Background="Gray"  Margin="328,94,33,57">
-            <StackPanel Background="White" Margin="1,1,1,1" RenderTransformOrigin="0.095,0.469">
+        <Label Content="Site Yönetimi" Foreground="Black" FontSize="22" Margin="10,10,572,635"/>
+        <Border Background="Gray"  Margin="0,70,10,10">
+            <StackPanel Background="White"  RenderTransformOrigin="0.095,0.469">
                 <StackPanel Height="70"></StackPanel>
                 <StackPanel Orientation="Horizontal" Height="48">
                     <Label Height="38" Content="Gazete Kodu" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>

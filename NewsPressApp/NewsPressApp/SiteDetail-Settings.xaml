@@ -5,40 +5,40 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NewsPressApp"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="1200"
+      d:DesignHeight="500" d:DesignWidth="600"
       Title="SiteDetail_Settings">
 
     <Grid>
-        <StackPanel x:Name="stkPanelSettings" Margin="193,180,60,23" >
-            <StackPanel x:Name="stkPanelNews" Orientation="Vertical" Height="486" Width="938">
+        <StackPanel x:Name="stkPanelSettings" Margin="0,10,0,2" >
+            <StackPanel x:Name="stkPanelNews" Orientation="Vertical" Height="413" Width="588">
                 <StackPanel Orientation="Horizontal" Height="62">
-                    <Label Content="Link:" FontSize="20" VerticalAlignment="Center" Width="150"/>
-                    <TextBox x:Name="txtlink" Width="779" Height="42"/>
+                    <Label Content="Link:" FontSize="20" VerticalAlignment="Center" Width="118"/>
+                    <TextBox x:Name="txtlink" Width="454" Height="42"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Height="62">
-                    <Label Content="Haber Tipi:" FontSize="20" VerticalAlignment="Center" Width="131"></Label>
-                    <ComboBox x:Name="cmbBoxNewsLinkType"  Background="White" Margin="20,-10" Height="42" Width="277" RenderTransformOrigin="0.496,0.459" HorizontalContentAlignment="Left"  >
+                    <Label Content="Haber Tipi:" FontSize="20" VerticalAlignment="Center" Width="99"></Label>
+                    <ComboBox x:Name="cmbBoxNewsLinkType"  Background="White" Margin="20,-10" Height="42" Width="106" RenderTransformOrigin="0.496,0.459" HorizontalContentAlignment="Left"  >
                         <ComboBoxItem x:Name="cmbboxNews" Content="Haber"></ComboBoxItem>
                         <ComboBoxItem x:Name="cmbboxColumn" Content="Köşe Yazısı"></ComboBoxItem>
                         <ComboBoxItem x:Name="cmbboxVideo" Content="Video"></ComboBoxItem>
                     </ComboBox>
-                    <Label Content="Yayınlanma Tarihi:" FontSize="20" Height="42" Width="185"/>
-                    <DatePicker x:Name="dateLink" FontSize="20" VerticalAlignment="Center" Width="293"/>
+                    <Label Content="Yayınlanma Tarihi:" FontSize="20" Height="42" Width="160"/>
+                    <DatePicker x:Name="dateLink" FontSize="20" VerticalAlignment="Center" Width="169"/>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Height="62">
-                    <Label Content="Başklık:" FontSize="20" Height="42" Width="147"></Label>
-                    <TextBox x:Name="txttitle" Width="779" Height="42"></TextBox>
+                    <Label Content="Başklık:" FontSize="20" Height="42" Width="115"></Label>
+                    <TextBox x:Name="txttitle" Width="459" Height="42"></TextBox>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Height="87">
-                    <Label Content="Açıklama:" FontSize="20" Height="42" Width="147"></Label>
-                    <TextBox x:Name="txtdesc" Width="779" Height="66"></TextBox>
+                    <Label Content="Açıklama:" FontSize="20" Height="42" Width="112"></Label>
+                    <TextBox x:Name="txtdesc" Width="462" Height="66"></TextBox>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="231" Width="929">
-                    <Label Content="İçerik:" FontSize="20" Height="43" Width="140"></Label>
-                    <TextBox x:Name="txtcontent" Width="779" Height="217"></TextBox>
+                <StackPanel Orientation="Horizontal" Height="142" Width="573">
+                    <Label Content="İçerik:" FontSize="20" Height="42" Width="104"></Label>
+                    <TextBox x:Name="txtcontent" Width="463" Height="120"></TextBox>
                 </StackPanel>
             </StackPanel>
-            <StackPanel Orientation="Horizontal" Height="72" Width="280" HorizontalAlignment="Stretch" VerticalAlignment="Bottom"  >
+            <StackPanel Orientation="Horizontal" Height="53" Width="280" HorizontalAlignment="Stretch"  >
                 <Button x:Name="btnSave" Background="#1e944c" Content="Kaydet" Margin="0,0,14,0" Height="43" Width="132" Click="btnSave_Click" VerticalAlignment="Bottom" HorizontalAlignment="Center" ></Button>
                 <Button x:Name="btnCancel" Background="#e6e6e6" Content="İptal" Height="43" Width="132" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="btnCancel_Click" ></Button>
             </StackPanel>

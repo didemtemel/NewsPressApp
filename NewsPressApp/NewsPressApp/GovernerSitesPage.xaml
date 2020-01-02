@@ -8,8 +8,8 @@
       d:DesignHeight="800" d:DesignWidth="1200"
       Title="GovernerSitesPage">
 
-    <Grid>
-            <DataGrid x:Name="grdWebsite" Margin="212,98,108,72" Grid.Column="2" MouseDoubleClick="grdWebsite_MouseDoubleClick" >
-            </DataGrid>
-    </Grid>
+    <StackPanel>
+        <DataGrid x:Name="grdWebsite" Margin="40,40,40,40" MouseDoubleClick="grdWebsite_MouseDoubleClick" Height="616" Width="900" >
+        </DataGrid>
+    </StackPanel>
 </Page>

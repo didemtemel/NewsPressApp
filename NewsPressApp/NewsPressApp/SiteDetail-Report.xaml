@@ -5,29 +5,29 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NewsPressApp"
       mc:Ignorable="d" 
-      d:DesignHeight="800" d:DesignWidth="1200"
+      d:DesignHeight="500" d:DesignWidth="600"
       Title="SiteDetail_Report">
 
     <Grid>
-        <StackPanel x:Name="stkPanelReport" Margin="193,180,52,116" Grid.Column="2">
-            <StackPanel Margin="0,30" Grid.Column="2" Orientation="Horizontal" Height="187" Width="793" >
-                <StackPanel Orientation="Vertical">
+        <StackPanel x:Name="stkPanelReport" Margin="10,0,0,0">
+            <StackPanel Margin="0,30" Grid.Column="2" Orientation="Horizontal" Height="192" Width="593" >
+                <StackPanel Orientation="Vertical" Height="192" Width="274">
                     <Label Content="İçerik Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="308" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
+                    <TextBox Width="230" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
                 </StackPanel>
-                <StackPanel>
+                <StackPanel Width="288">
                     <Label Content="Haber Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="308" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
+                    <TextBox Width="252" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
                 </StackPanel>
             </StackPanel>
             <StackPanel  Grid.Column="2" Orientation="Horizontal" Height="187" Width="793">
-                <StackPanel>
+                <StackPanel Height="182" Width="263">
                     <Label Content="Köşe Yazısı Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="308" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
+                    <TextBox Width="244" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
                 </StackPanel>
-                <StackPanel>
+                <StackPanel Height="183" Width="282">
                     <Label Content="Video Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="308" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
+                    <TextBox Width="244" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

@@ -65,14 +65,12 @@ C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\NewsPressApp.csprojAssemblyReference.cache
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\GovernerSitesPage.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteAuthority.g.cs
-C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetailPage.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\UserAuthorityPage.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetail-Detail.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetail-Report.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetail-Settings.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\GovernerSitesPage.baml
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteAuthority.baml
-C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetailPage.baml
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\UserAuthorityPage.baml
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetail-Detail.baml
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetail-Report.baml
