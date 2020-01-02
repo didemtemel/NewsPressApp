@@ -77,3 +77,7 @@ C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetail-Settings.baml
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetailWindow.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\SiteDetailWindow.baml
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\ForeignSitesPage.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\NationalSitesPage.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\ForeignSitesPage.baml
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\NationalSitesPage.baml

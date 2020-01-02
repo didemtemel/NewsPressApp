@@ -11,41 +11,49 @@
     <Grid>
         <Label Content="Site Yönetimi" Foreground="Black" FontSize="22" Margin="10,10,572,635"/>
         <Border Background="Gray"  Margin="0,70,10,10">
-            <StackPanel Background="White"  RenderTransformOrigin="0.095,0.469">
+            <StackPanel Background="White"  RenderTransformOrigin="0.095,0.469" Orientation="Vertical" >
                 <StackPanel Height="70"></StackPanel>
-                <StackPanel Orientation="Horizontal" Height="48">
-                    <Label Height="38" Content="Gazete Kodu" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
-                    <Label Height="38" Content="Gazete Adı" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="61" >
-                    <TextBox x:Name="txtSiteCode" Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249"  HorizontalContentAlignment="Left" FontSize="20"  />
-                    <TextBox x:Name="txtSiteName" Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249" HorizontalContentAlignment="Left" FontSize="20"   />
-                </StackPanel>
-                <StackPanel Height="20"></StackPanel>
-                <StackPanel Orientation="Horizontal" Height="48">
-                    <Label Height="38" Content="Web Sitesi Adresi" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
-                    <Label Height="38" Content="Gazete Tipi" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
-                </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="61" >
-                    <TextBox x:Name="txtWebSite" Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249"  HorizontalContentAlignment="Left" FontSize="20"  />
-                    <ComboBox x:Name="cmbboxSiteType" Background="White" Margin="30,10" Height="38" Width="249" RenderTransformOrigin="0.496,0.459" HorizontalContentAlignment="Left" HorizontalAlignment="Left"  >
-                        <ComboBoxItem x:Name="cmbboxCommon" Content="Yaygın"></ComboBoxItem>
-                        <ComboBoxItem x:Name="cmbboxForeign" Content="Yabancı"></ComboBoxItem>
-                        <ComboBoxItem x:Name="cmbboxLocal" Content="Yerel"></ComboBoxItem>
-                    </ComboBox>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="48">
+                        <Label Height="38" Content="Gazete Kodu" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
+                        <Label Height="38" Content="Gazete Adı" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="61" >
+                        <TextBox x:Name="txtSiteCode" Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249"  HorizontalContentAlignment="Left" FontSize="20"  />
+                        <TextBox x:Name="txtSiteName" Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249" HorizontalContentAlignment="Left" FontSize="20"   />
+                    </StackPanel>
                 </StackPanel>
                 <StackPanel Height="20"></StackPanel>
-                <StackPanel Orientation="Horizontal" Height="48">
-                    <Label Height="38" Content="Ülke" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
-                    <Label Height="38" Content="Şehir" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="48">
+                        <Label Height="38" Content="Web Sitesi Adresi" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
+                        <Label Height="38" Content="Gazete Tipi" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="61" >
+                        <TextBox x:Name="txtWebSite" Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249"  HorizontalContentAlignment="Left" FontSize="20"  />
+                        <ComboBox x:Name="cmbboxSiteType" Background="White" Margin="30,10" Height="38" Width="249" RenderTransformOrigin="0.496,0.459" HorizontalContentAlignment="Left" HorizontalAlignment="Left"  >
+                            <ComboBoxItem x:Name="cmbboxCommon" Content="Yaygın"></ComboBoxItem>
+                            <ComboBoxItem x:Name="cmbboxForeign" Content="Yabancı"></ComboBoxItem>
+                            <ComboBoxItem x:Name="cmbboxLocal" Content="Yerel"></ComboBoxItem>
+                        </ComboBox>
+                    </StackPanel>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="61" >
-                    <TextBox x:Name="txtSiteCountry"  Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249"  HorizontalContentAlignment="Left" FontSize="20"  />
-                    <TextBox x:Name="txtSiteState" Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249"  HorizontalContentAlignment="Left" FontSize="20"  />
+                <StackPanel Height="20"></StackPanel>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="48">
+                        <Label Height="38" Content="Ülke" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
+                        <Label Height="38" Content="Şehir" FontSize="20" Margin="20,10" Width="273" HorizontalAlignment="Left"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="61" >
+                        <TextBox x:Name="txtSiteCountry"  Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249"  HorizontalContentAlignment="Left" FontSize="20"  />
+                        <TextBox x:Name="txtSiteState" Text="" Foreground="Gray" Margin="30,10" TextWrapping="Wrap" Height="38" Width="249"  HorizontalContentAlignment="Left" FontSize="20"  />
+                    </StackPanel>
                 </StackPanel>
-                <StackPanel Orientation="Horizontal" Height="150" Width="390"  >
-                    <Button x:Name="btnSave" Background="#1e944c" Content="Kaydet" Margin="40" Height="43" Width="132" Click="btnSave_Click" ></Button>
-                    <Button x:Name="btnCancel" Background="#e6e6e6" Content="İptal" Height="43" Width="132" Click="btnCancel_Click" ></Button>
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Height="150" Width="390"  >
+                        <Button x:Name="btnSave" Background="#1e944c" Content="Kaydet" Margin="40" Height="43" Width="132" Click="btnSave_Click" ></Button>
+                        <Button x:Name="btnCancel" Background="#e6e6e6" Content="İptal" Height="43" Width="132" Click="btnCancel_Click" ></Button>
+                    </StackPanel>
                 </StackPanel>
             </StackPanel>
         </Border>

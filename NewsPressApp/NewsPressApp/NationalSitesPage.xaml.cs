@@ -16,15 +16,14 @@ using System.Windows.Shapes;
 namespace NewsPressApp
 {
     /// <summary>
-    /// GovernerSitesPage.xaml etkileşim mantığı
+    /// NationalSitesPage.xaml etkileşim mantığı
     /// </summary>
-    public partial class GovernerSitesPage : Page
+    public partial class NationalSitesPage : Page
     {
         NewsletterDB newsletterDB;
 
-        public GovernerSitesPage()
+        public NationalSitesPage()
         {
-
             InitializeComponent();
             newsletterDB = new NewsletterDB();
             FillDataGrid();
@@ -36,7 +35,7 @@ namespace NewsPressApp
             string CmdString = string.Empty;
             using (SqlConnection con = new SqlConnection(sqlCon))
             {
-                CmdString = "SELECT sitecode , sitename FROM Website WHERE sitetype = 'Yaygın'";
+                CmdString = "SELECT sitecode , sitename FROM Website WHERE sitetype = 'Yerel'";
                 SqlCommand cmd = new SqlCommand(CmdString, con);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable("sitename");

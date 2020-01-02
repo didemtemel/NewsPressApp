@@ -8,28 +8,32 @@
       d:DesignHeight="500" d:DesignWidth="600"
       Title="SiteDetail_Report">
 
-    <Grid>
-        <StackPanel x:Name="stkPanelReport" Margin="10,0,0,0">
-            <StackPanel Margin="0,30" Grid.Column="2" Orientation="Horizontal" Height="192" Width="593" >
+    <StackPanel x:Name="stkPanelReport" Margin="10,0,0,0" Orientation="Vertical">
+        <StackPanel Margin="0,10" Height="43" Width="576" Orientation="Horizontal" HorizontalAlignment="Right">
+            <Label Content="Başlangıç Tarihi" Width="119"></Label>
+            <DatePicker x:Name="datepickerStart" Width="109" Height="39" ></DatePicker>
+            <Label Content="Bitiş Tarihi" Margin="40,0,0,10" Width="98"></Label>
+            <DatePicker x:Name="datepickerEnd" Width="127" ></DatePicker>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="180" Width="593" VerticalAlignment="Top" >
                 <StackPanel Orientation="Vertical" Height="192" Width="274">
-                    <Label Content="İçerik Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="230" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
+                    <Label Content="İçerik Sayısı"  Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
+                    <DataGrid x:Name="dtgNumAll" CanUserAddRows="False" IsReadOnly="True" Width="Auto" FontSize="30" Height="Auto" HeadersVisibility="None" HorizontalAlignment="Center" ></DataGrid>                
                 </StackPanel>
                 <StackPanel Width="288">
                     <Label Content="Haber Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="252" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
+                    <TextBox Width="252" Height="101" FontSize="20"  BorderThickness="3"></TextBox>
                 </StackPanel>
-            </StackPanel>
-            <StackPanel  Grid.Column="2" Orientation="Horizontal" Height="187" Width="793">
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Height="187" Width="793" VerticalAlignment="Bottom" HorizontalAlignment="Left">
                 <StackPanel Height="182" Width="263">
                     <Label Content="Köşe Yazısı Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="244" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
+                    <TextBox Width="244" Height="101" FontSize="20"  BorderThickness="3"></TextBox>
                 </StackPanel>
                 <StackPanel Height="183" Width="282">
                     <Label Content="Video Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
                     <TextBox Width="244" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
                 </StackPanel>
-            </StackPanel>
         </StackPanel>
-    </Grid>
+    </StackPanel>
 </Page>

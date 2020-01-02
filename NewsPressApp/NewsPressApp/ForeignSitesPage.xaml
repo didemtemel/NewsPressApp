@@ -1,4 +1,4 @@
-﻿<Page x:Class="NewsPressApp.GovernerSitesPage"
+﻿<Page x:Class="NewsPressApp.ForeignSitesPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
@@ -6,10 +6,10 @@
       xmlns:local="clr-namespace:NewsPressApp"
       mc:Ignorable="d" 
       d:DesignHeight="800" d:DesignWidth="1200"
-      Title="GovernerSitesPage">
+      Title="ForeignSitesPage">
 
     <StackPanel>
-        <DataGrid x:Name="grdWebsite" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" Margin="40,40,40,40" MouseDoubleClick="grdWebsite_MouseDoubleClick" Height="Auto" Width="Auto"   >
+        <DataGrid x:Name="grdWebsite" Margin="40,40,40,40" MouseDoubleClick="grdWebsite_MouseDoubleClick" Height="616" Width="900" >
         </DataGrid>
     </StackPanel>
 </Page>

@@ -7,10 +7,16 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="ForeignSitesPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="GovernerSitesPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="LoginScreen.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="NationalSitesPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="SiteAuthority.xaml.cs">
@@ -33,6 +39,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="ForeignSitesPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="GovernerSitesPage.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -40,6 +49,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="NationalSitesPage.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="SiteAuthority.xaml">

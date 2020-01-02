@@ -53,10 +53,23 @@ namespace NewsPressApp
 
         private void btnGoverner_Click(object sender, RoutedEventArgs e)
         {
+
             frmMain.Content = new GovernerSitesPage();
+
         }
 
+        private void btnForeign_Click(object sender, RoutedEventArgs e)
+        {
 
+            frmMain.Content = new ForeignSitesPage();
 
+        }
+
+        private void btnNational_Click(object sender, RoutedEventArgs e)
+        {
+
+            frmMain.Content = new NationalSitesPage();
+
+        }
     }
 }

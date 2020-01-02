@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NETCOREAPP;NETCOREAPP3_0
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\App.xaml
-91633416964
+11-1431655903
 
-15-1828872221
+171091259338
 2111009925227
-GovernerSitesPage.xaml;LoginScreen.xaml;MainWindow.xaml;SiteAuthority.xaml;SiteDetail-Detail.xaml;SiteDetail-Report.xaml;SiteDetail-Settings.xaml;SiteDetailWindow.xaml;UserAuthorityPage.xaml;
+ForeignSitesPage.xaml;GovernerSitesPage.xaml;LoginScreen.xaml;MainWindow.xaml;NationalSitesPage.xaml;SiteAuthority.xaml;SiteDetail-Detail.xaml;SiteDetail-Report.xaml;SiteDetail-Settings.xaml;SiteDetailWindow.xaml;UserAuthorityPage.xaml;
 
 True
 
