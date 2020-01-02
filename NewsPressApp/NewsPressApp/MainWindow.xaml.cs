@@ -27,6 +27,8 @@ namespace NewsPressApp
             userr = user;
             InitializeComponent();
             checkRole(user);
+            
+
         }
 
 
@@ -45,7 +47,7 @@ namespace NewsPressApp
 
         private void checkRole(User user)
         {
-            if(user.Role == "Standard")
+            if(user.Role == "Standart")
             {
                 spMenagement.Visibility = Visibility.Hidden;
             }
@@ -69,6 +71,13 @@ namespace NewsPressApp
         {
 
             frmMain.Content = new NationalSitesPage();
+
+        }
+
+        private void btnSearchDetail_Click(object sender, RoutedEventArgs e)
+        {
+
+            frmMain.Content = new NumberofContent();
 
         }
     }

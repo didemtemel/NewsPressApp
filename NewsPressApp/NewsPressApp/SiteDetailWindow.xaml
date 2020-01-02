@@ -8,13 +8,14 @@
         Title="SiteDetailWindow" Height="800" Width="1200">
     <StackPanel Orientation="Vertical">
         <TextBlock x:Name="txtsitename" HorizontalAlignment="Left" FontSize="20" Margin="193,10,0,0" Text="GazeteAdı" TextWrapping="Wrap" VerticalAlignment="Top" Height="36" Width="844"/>
-        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" >
-            <Button x:Name="btnReport" Content="Rapor" Width="279" Height="45" Click="btnReport_Click" ></Button>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Width="1077" >
+            <Button x:Name="btnReport" Content="Rapor" Width="245" Height="45" Click="btnReport_Click" ></Button>
             <Button x:Name="btnDetail" Content="Detay" Width="277" Height="45" Click="btnDetail_Click" ></Button>
             <Button x:Name="btnSettings" Content="Ayarlar" Width="289" Height="45" Click="btnSettings_Click" />
+            <Button Content="Ana Ekrana Dön" Margin="110,0,0,0" Width="134" Click="Button_Click"></Button>
         </StackPanel>
-        <StackPanel Height="686" Width="846">
-            <Frame x:Name="frmSiteDetails" Margin="193,165,55,41"/>
+        <StackPanel Height="686" Width="1083">
+            <Frame x:Name="frmSiteDetails"  Height="688" Width="1081"/>
         </StackPanel>
     </StackPanel>
 </Window>

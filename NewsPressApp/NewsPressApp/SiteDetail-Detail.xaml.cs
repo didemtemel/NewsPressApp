@@ -26,7 +26,6 @@ namespace NewsPressApp
         {
             InitializeComponent();
             this.website = website;
-            MessageBox.Show(website.SiteCode);
             FillDataGrid();
 
         }

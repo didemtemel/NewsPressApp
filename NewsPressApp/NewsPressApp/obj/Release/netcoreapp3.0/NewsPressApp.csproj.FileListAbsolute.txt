@@ -81,3 +81,5 @@ C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\NationalSitesPage.g.cs
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\ForeignSitesPage.baml
 C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\NationalSitesPage.baml
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\NumberofContent.g.cs
+C:\Users\Didem Temel\Desktop\NewsPressApp\NewsPressApp\NewsPressApp\obj\Release\netcoreapp3.0\NumberofContent.baml

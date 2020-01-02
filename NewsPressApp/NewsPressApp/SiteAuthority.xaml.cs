@@ -18,6 +18,7 @@ namespace NewsPressApp
     /// </summary>
     public partial class SiteAuthority : Page
     {
+
         public SiteAuthority()
         {
             InitializeComponent();
@@ -38,6 +39,8 @@ namespace NewsPressApp
 
             db.SaveChanges();
             MessageBox.Show("Gazete sisteme kaydedildi.");
+            this.NavigationService.Navigate(new GovernerSitesPage());
+
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)

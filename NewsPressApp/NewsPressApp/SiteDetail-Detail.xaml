@@ -5,23 +5,16 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NewsPressApp"
       mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="600"
+      d:DesignHeight="650" d:DesignWidth="1000"
       Title="SiteDetail_Detail">
 
-   
-        <StackPanel x:Name="stkPanelDetail" Orientation="Vertical">
-            <StackPanel Orientation="Horizontal" >
-                <TextBox x:Name="txtboxSearch" Foreground="#0F4925" Margin="19"  Text=" Ara..." TextWrapping="Wrap" VerticalAlignment="Top" Width="562" Height="31" Grid.Column="2">
-                    <TextBox.Resources>
-                        <Style TargetType="Border">
-                            <Setter Property="CornerRadius" Value="15"/>
-                        </Style>
-                    </TextBox.Resources>
-                </TextBox>
-            </StackPanel>
-            <StackPanel Height="409">
+
+    <StackPanel x:Name="stkPanelDetail" Orientation="Vertical">
+        <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled" Width="1000" HorizontalAlignment="Left">
+            <StackPanel Height="581">
                 <DataGrid x:Name="grdWebsiteDetail" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*"  Height="Auto"   >
                 </DataGrid>
             </StackPanel>
-        </StackPanel>
+        </ScrollViewer>
+    </StackPanel>
 </Page>

@@ -38,13 +38,17 @@ namespace NewsPressApp
 
             db.SaveChanges();
             MessageBox.Show("Link sisteme kaydedildi.");
+            this.NavigationService.Navigate(new SiteDetail_Settings());
+
 
 
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
         {
-            // cancel yapılacak        
+            this.NavigationService.Navigate(new SiteDetail_Settings());
         }
+
+
     }
 }

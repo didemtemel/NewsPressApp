@@ -5,36 +5,36 @@
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
       xmlns:local="clr-namespace:NewsPressApp"
       mc:Ignorable="d" 
-      d:DesignHeight="500" d:DesignWidth="600"
+      d:DesignHeight="650" d:DesignWidth="1000"
       Title="SiteDetail_Report">
 
     <StackPanel x:Name="stkPanelReport" Orientation="Vertical">
-        <StackPanel Margin="0,10" Height="43" Width="576" Orientation="Horizontal" HorizontalAlignment="Right">
+        <StackPanel Margin="0,10" Height="43" Width="867" Orientation="Horizontal" HorizontalAlignment="Right">
             <Label Content="Başlangıç Tarihi" Width="119" VerticalAlignment="Center"></Label>
             <DatePicker x:Name="datepickerStart" Width="109" Height="28" SelectedDateFormat="Short"  ></DatePicker>
             <Label Content="Bitiş Tarihi" Margin="40,0,0,10" Width="98" VerticalAlignment="Bottom" Height="32"></Label>
             <DatePicker x:Name="datepickerEnd" Width="127" VerticalAlignment="Center" ></DatePicker>
             <Button Content="Uygula" Margin="10" Click="Button_Click"></Button>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="180" Width="593" VerticalAlignment="Top" >
-                <StackPanel Orientation="Vertical" Height="192" Width="274">
+        <StackPanel Orientation="Horizontal" Height="180" Width="995" >
+                <StackPanel Orientation="Vertical" Height="176" Width="421">
                     <Label Content="İçerik Sayısı"  Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
                     <DataGrid x:Name="dtgNumAll" CanUserAddRows="False" IsReadOnly="True" Width="Auto" FontSize="30" Height="Auto" HeadersVisibility="None" HorizontalAlignment="Center" ></DataGrid>                
                 </StackPanel>
-                <StackPanel Width="288">
+            <StackPanel Height="173" Width="421" Margin="50,00,10,10">
                     <Label Content="Haber Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="252" Height="101" FontSize="20"  BorderThickness="3"></TextBox>
-                </StackPanel>
+                <DataGrid x:Name="dtgNumNews" CanUserAddRows="False" IsReadOnly="True" Width="Auto" FontSize="30" Height="Auto" HeadersVisibility="None"  HorizontalAlignment="Center" ></DataGrid>
+            </StackPanel>
         </StackPanel>
-        <StackPanel Orientation="Horizontal" Height="187" Width="793" VerticalAlignment="Bottom" HorizontalAlignment="Left">
-                <StackPanel Height="182" Width="263">
+        <StackPanel Orientation="Horizontal" Height="187" Width="996" HorizontalAlignment="Left">
+            <StackPanel Height="192" Width="421">
                     <Label Content="Köşe Yazısı Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="244" Height="101" FontSize="20"  BorderThickness="3"></TextBox>
+                <DataGrid x:Name="dtgNumColumn" CanUserAddRows="False" IsReadOnly="True" Width="Auto" FontSize="30" Height="Auto" HeadersVisibility="None" HorizontalAlignment="Center"   ></DataGrid>
                 </StackPanel>
-                <StackPanel Height="183" Width="282">
+            <StackPanel Height="192" Width="421" Margin="50,00,10,10">
                     <Label Content="Video Sayısı" Width="307" Height="46" FontSize="20" Margin="10" BorderThickness="0"></Label>
-                    <TextBox Width="244" Height="101" FontSize="20" Margin="1" BorderThickness="3"></TextBox>
-                </StackPanel>
+                <DataGrid x:Name="dtgNumVideo" CanUserAddRows="False"  IsReadOnly="True" Width="Auto" FontSize="30" Height="Auto" HeadersVisibility="None" HorizontalAlignment="Center"  />
+            </StackPanel>
         </StackPanel>
     </StackPanel>
 </Page>

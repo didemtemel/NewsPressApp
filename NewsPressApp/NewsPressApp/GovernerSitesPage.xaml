@@ -8,7 +8,8 @@
       d:DesignHeight="800" d:DesignWidth="1200"
       Title="GovernerSitesPage">
 
-    <StackPanel>
+    <StackPanel Orientation="Vertical">
+        <Label Content="Yaygın Gazeteler" FontSize="22" Width="1195"></Label>
         <DataGrid x:Name="grdWebsite" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*" Margin="40,40,40,40" MouseDoubleClick="grdWebsite_MouseDoubleClick" Height="Auto" Width="Auto"   >
         </DataGrid>
     </StackPanel>

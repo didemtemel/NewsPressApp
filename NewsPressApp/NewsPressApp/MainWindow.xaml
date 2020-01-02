@@ -14,13 +14,12 @@
             <Button x:Name="btnGoverner" BorderThickness="0" Foreground="White"  Background="#0F4925" FontSize="18" Content="Yaygın Gazeteler" Height="35" Width="280" HorizontalAlignment="Left" Click="btnGoverner_Click" />
             <Button x:Name="btnForeign" BorderThickness="0"  Background="#0F4925" HorizontalAlignment="Left" Foreground="White" FontSize="18" Margin="16,34,0,0" Content="Yabancı Gazeteler " Height="35" Width="264" Click="btnForeign_Click"/>
             <Button x:Name="btnNational" BorderThickness="0"  Background="#0F4925" HorizontalAlignment="Left" Foreground="White" FontSize="18" Margin="16,34,0,0" Content="Yerel Gazeteler     " Height="35" Width="264" Click="btnNational_Click"/>
-            <Button x:Name="btnSearchDetail" BorderThickness="0"  Background="#0F4925" HorizontalAlignment="Left" Foreground="White" FontSize="18" Margin="16,34,0,0" Content="İçerik Arama         " Height="35" Width="265"/>
-            <Button x:Name="btnReportDetail" BorderThickness="0"  Background="#0F4925" HorizontalAlignment="Left" Foreground="White" FontSize="18" Margin="16,34,0,0" Content="İçerik Sayıları        " Height="35" Width="264"/>
+            <Button x:Name="btnSearchDetail" BorderThickness="0"  Background="#0F4925" HorizontalAlignment="Left" Foreground="White" FontSize="18" Margin="16,34,0,0" Content="İçerikler                 " Height="35" Width="265" Click="btnSearchDetail_Click"/>
             <StackPanel x:Name="spMenagement" >
                 <Label HorizontalAlignment="Center" Foreground="#d9d9d9" FontSize="18" Margin="1,34,0,0" Content="Yönetim" Height="31" Width="261"/>
                 <Separator Foreground="White"></Separator>
-                <Button x:Name="btnAuthority" BorderThickness="0"  Background="#0F4925" Foreground="White" FontSize="18" Content="Yetki Yönetimi " Height="31" Width="279" HorizontalAlignment="Left" Click="btnAuthority_Click"/>
-                <Button x:Name="btnNewSite" BorderThickness="0"  Background="#0F4925" Foreground="White" FontSize="18" Content="Site Yönetimi " Height="53" Width="279" Click="btnNewSite_Click"/>
+                <Button x:Name="btnAuthority" BorderThickness="0"  Background="#0F4925" Foreground="White" FontSize="18" Content="Yetki Yönetimi   " Height="31" Width="279" HorizontalAlignment="Left" Click="btnAuthority_Click"/>
+                <Button x:Name="btnNewSite" BorderThickness="0"  Background="#0F4925" Foreground="White" FontSize="18" Content="Site Yönetimi   " Height="53" Width="279" Click="btnNewSite_Click"/>
             </StackPanel>
         </StackPanel>
         <Frame x:Name="frmMain"  Height="776" Width="920"/>

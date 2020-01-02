@@ -22,6 +22,7 @@ namespace NewsPressApp
     {
 
         NewsletterDB newsletterDB;
+
         public LoginScreen()
         {
             newsletterDB = new NewsletterDB();

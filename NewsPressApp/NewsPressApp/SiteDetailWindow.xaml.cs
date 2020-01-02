@@ -24,6 +24,7 @@ namespace NewsPressApp
             InitializeComponent();
             this.website = website;
             initializeWebsiteInfo();
+            frmSiteDetails.Content = new SiteDetail_Report();
         }
 
 
@@ -50,5 +51,15 @@ namespace NewsPressApp
             frmSiteDetails.Content = new SiteDetail_Settings();
 
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            User user = new User();
+            MainWindow mainwindow = new MainWindow(user);
+            mainwindow.Show();
+            this.Close();
+        }
+
+
     }
 }

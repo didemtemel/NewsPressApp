@@ -40,13 +40,42 @@ namespace NewsPressApp
                 sda.Fill(dt);
                 dtgNumAll.ItemsSource = dt.DefaultView;
             }
+
+            using (SqlConnection con = new SqlConnection(sqlCon))
+            {
+                CmdString = "SELECT COUNT (sitelink) FROM Link WHERE newstype='Haber'";
+                SqlCommand cmd = new SqlCommand(CmdString, con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dtgNumNews.ItemsSource = dt.DefaultView;
+            }
+
+            using (SqlConnection con = new SqlConnection(sqlCon))
+            {
+                CmdString = "SELECT COUNT (sitelink) FROM Link WHERE newstype='Köşe Yazısı'";
+                SqlCommand cmd = new SqlCommand(CmdString, con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dtgNumColumn.ItemsSource = dt.DefaultView;
+            }
+
+            using (SqlConnection con = new SqlConnection(sqlCon))
+            {
+                CmdString = "SELECT COUNT (sitelink) FROM Link WHERE newstype='Video'";
+                SqlCommand cmd = new SqlCommand(CmdString, con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dtgNumVideo.ItemsSource = dt.DefaultView;
+            }
         }
 
        
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(datepickerEnd.SelectedDate.Value.ToString("yyyy-MM-dd"));
             String sqlCon = @"Data Source =.; Initial Catalog = NewsletterDB; Integrated Security = True;";
             string CmdString = string.Empty;
             using (SqlConnection con = new SqlConnection(sqlCon))
@@ -57,6 +86,35 @@ namespace NewsPressApp
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
                dtgNumAll.ItemsSource = dt.DefaultView;
+            }
+            using (SqlConnection con = new SqlConnection(sqlCon))
+            {
+                CmdString = "SELECT COUNT (sitelink) FROM Link WHERE (newsdate BETWEEN '" + datepickerStart.SelectedDate.Value.ToString("yyyy-MM-dd") + "' AND '" + datepickerEnd.SelectedDate.Value.ToString("yyyy-MM-dd") + "') AND newstype='Haber'";
+                SqlCommand cmd = new SqlCommand(CmdString, con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dtgNumNews.ItemsSource = dt.DefaultView;
+            }
+
+            using (SqlConnection con = new SqlConnection(sqlCon))
+            {
+                CmdString = "SELECT COUNT (sitelink) FROM Link WHERE (newsdate BETWEEN '" + datepickerStart.SelectedDate.Value.ToString("yyyy-MM-dd") + "' AND '" + datepickerEnd.SelectedDate.Value.ToString("yyyy-MM-dd") + "') AND newstype='Köşe Yazısı'";
+                SqlCommand cmd = new SqlCommand(CmdString, con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dtgNumColumn.ItemsSource = dt.DefaultView;
+            }
+
+            using (SqlConnection con = new SqlConnection(sqlCon))
+            {
+                CmdString = "SELECT COUNT (sitelink) FROM Link WHERE (newsdate BETWEEN '" + datepickerStart.SelectedDate.Value.ToString("yyyy-MM-dd") + "' AND '" + datepickerEnd.SelectedDate.Value.ToString("yyyy-MM-dd") + "') AND newstype='Video'";
+                SqlCommand cmd = new SqlCommand(CmdString, con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                dtgNumVideo.ItemsSource = dt.DefaultView;
             }
 
         }

@@ -16,18 +16,15 @@ using System.Windows.Shapes;
 namespace NewsPressApp
 {
     /// <summary>
-    /// NationalSitesPage.xaml etkileşim mantığı
+    /// NumberofContent.xaml etkileşim mantığı
     /// </summary>
-    public partial class NationalSitesPage : Page
+    public partial class NumberofContent : Page
     {
-        NewsletterDB newsletterDB;
-
-
-        public NationalSitesPage()
+        public NumberofContent()
         {
             InitializeComponent();
-            newsletterDB = new NewsletterDB();
             FillDataGrid();
+
         }
 
         private void FillDataGrid()
@@ -36,28 +33,13 @@ namespace NewsPressApp
             string CmdString = string.Empty;
             using (SqlConnection con = new SqlConnection(sqlCon))
             {
-                CmdString = "SELECT sitecode , sitename FROM Website WHERE sitetype = 'Yerel'";
+                CmdString = "SELECT sitelink, newstype, newsdate, newstitle, newsdescription, newscontent FROM Link";
                 SqlCommand cmd = new SqlCommand(CmdString, con);
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable("sitename");
                 sda.Fill(dt);
-                grdWebsite.ItemsSource = dt.DefaultView;
+                grdWebsiteNum.ItemsSource = dt.DefaultView;
             }
-        }
-
-        private void grdWebsite_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-            /*https://social.msdn.microsoft.com/Forums/en-US/4eaaa58f-404c-41a0-9ee6-65e77aab5c58/how-to-pull-data-from-datarowview?forum=Vsexpressvcs */
-
-            DataRowView drv = this.grdWebsite.SelectedItem as DataRowView;
-
-            Website website = new Website();
-
-            website.SiteName = drv["sitename"].ToString();
-            website.SiteCode = drv["sitecode"].ToString();
-
-            SiteDetailWindow sitedetail = new SiteDetailWindow(website);
-            sitedetail.Show();
         }
     }
 }

@@ -18,6 +18,7 @@ namespace NewsPressApp
     /// </summary>
     public partial class UserAuthorityPage : Page
     {
+
         public UserAuthorityPage()
         {
             InitializeComponent();
@@ -35,6 +36,8 @@ namespace NewsPressApp
 
             db.SaveChanges();
             MessageBox.Show("Kullanıcı sisteme kaydedildi.");
+            this.NavigationService.Navigate(new GovernerSitesPage());
+
         }
 
         private void btnCancel_Click(object sender, RoutedEventArgs e)
