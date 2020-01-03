@@ -30,6 +30,8 @@ namespace NewsPressApp
         }
         private void btnSubmit_Click(object sender, RoutedEventArgs e)
         {
+            // https://www.youtube.com/watch?v=72366X1-heg&t=704s
+
             SqlConnection sqlCon = new SqlConnection(@"Data Source =.; Initial Catalog = NewsletterDB; Integrated Security = True;");
 
             try

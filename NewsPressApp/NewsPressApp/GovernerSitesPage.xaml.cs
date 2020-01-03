@@ -30,6 +30,7 @@ namespace NewsPressApp
             FillDataGrid();
         }
 
+
         private void FillDataGrid()
         {
             String sqlCon = @"Data Source =.; Initial Catalog = NewsletterDB; Integrated Security = True;";

@@ -12,10 +12,14 @@
         <Label Content="Kullanıcı Yönetimi" Foreground="Black" FontSize="22" Margin="72,10,600,695"/>
         <Border Background="Gray"  Margin="0,0,0,10">
             <StackPanel Background="White" Margin="1,1,1,1" RenderTransformOrigin="0.095,0.469">
-                <Label Height="39" Content="Kullanıcı Adı" FontSize="20" Margin="20" Width="273" HorizontalAlignment="Left"/>
-                <TextBox x:Name="txtUserName" Text="" Foreground="Gray" Margin="-10" TextWrapping="Wrap" Height="39" Width="564"  HorizontalContentAlignment="Left" FontSize="20"  />
-                <Label Height="39" Content="E-mail" FontSize="20" Margin="20" Width="273" HorizontalAlignment="Left"/>
-                <TextBox x:Name="txtMail" Text="" Foreground="Gray" Margin="-10" TextWrapping="Wrap" Height="39" Width="564" HorizontalContentAlignment="Left" FontSize="20"   />
+                <StackPanel Orientation="Vertical">
+                    <Label Height="39" Content="Kullanıcı Adı" FontSize="20" Margin="20" Width="273" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="txtUserName" Text="" Foreground="Gray" Margin="-10" TextWrapping="Wrap" Height="39" Width="564"  HorizontalContentAlignment="Left" FontSize="20"  />
+                </StackPanel>
+                <StackPanel Orientation="Vertical">
+                    <Label Height="39" Content="E-mail" FontSize="20" Margin="20" Width="273" HorizontalAlignment="Left"/>
+                    <TextBox x:Name="txtMail" Text="" Foreground="Gray" Margin="-10" TextWrapping="Wrap" Height="39" Width="564" HorizontalContentAlignment="Left" FontSize="20"   />
+                </StackPanel>
                 <StackPanel Orientation="Horizontal" Height="75">
                     <Label Height="39" Content="Şifre" FontSize="20" Margin="20" Width="273" HorizontalAlignment="Left"/>
                     <Label Height="39" Content="Rol" FontSize="20" Margin="20" Width="273" HorizontalAlignment="Left"/>

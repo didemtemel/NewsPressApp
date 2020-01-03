@@ -7,10 +7,11 @@
       mc:Ignorable="d" 
       d:DesignHeight="800" d:DesignWidth="1200"
       Title="NumberofContent">
-    <StackPanel x:Name="stkPanelDetail" Margin="0,10,91,32">
-        <ScrollViewer VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Disabled" Width="1105" HorizontalAlignment="Left" Height="738">
-            <DataGrid x:Name="grdWebsiteNum" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*"  Height="Auto" Width="Auto"  >
+    <StackPanel x:Name="stkPanelDetail" Orientation="Vertical" Margin="0,10,91,32">
+        <Label Content="İçerikler" FontSize="20"></Label>
+        <Grid>
+            <DataGrid x:Name="grdWebsiteNum" CanUserAddRows="False" IsReadOnly="True" ColumnWidth="*"  Height="Auto" Width="Auto" ScrollViewer.CanContentScroll="True"  ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"  >
             </DataGrid>
-        </ScrollViewer>
+        </Grid>
     </StackPanel>
 </Page>
